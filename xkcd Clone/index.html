@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href='styles/style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <title>xkcdFake</title>
+    <link rel="icon" href="images/xkcdicon.jpg">
+</head>
+
+<body>
+    <div class='header'>
+        <div>
+            <img src='images/xkcdclone.png' alt='xkcdClone'>
+        </div>
+        <div class='input-search'>
+            <input type="number" id="search-box" placeholder='Enter comic number'>
+            <button id='search-button'>
+                <span class="material-icons">
+                    search
+                </span>
+            </button>
+            <span id='error' class='hidden'>
+                <span class="material-icons-outlined">error_outline</span>
+                Not a positive integer
+            </span>
+        </div>
+        <div id='filterNumber'>
+            <label for="list">Show </label>
+            <select id="list">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+            <span> comic(s)</span>
+        </div>
+    </div>
+    <div class='main-body'>
+        <div class='nav'>
+            <button class='nav-button prev'>
+                < P<span class='smaller-font'>REVIOUS</span>
+            </button>
+            <button class='nav-button rand'>R<span class='smaller-font'>ANDOM</span></button>
+            <button class='nav-button next'>N<span class='smaller-font'>EXT</span> ></button>
+        </div>
+        <div id='loading' class='hidden'>Sketching the comics...</div>
+        <div id='comic-list'>
+            <div class='singleComic'>
+                <div class='comic-title'>Barrel - Part 1</div>
+                <img class='comic-image' src='https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg' alt='mainComic'>
+            </div>
+        </div>
+        <div class='nav'>
+            <button class='nav-button prev'>
+                < P<span class='smaller-font'>REVIOUS</span>
+            </button>
+            <button class='nav-button rand'>R<span class='smaller-font'>ANDOM</span></button>
+            <button class='nav-button next'>N<span class='smaller-font'>EXT</span> ></button>
+        </div>
+    </div>
+
+    <script src='scripts/doComicNumber.js'></script>
+    <script src='scripts/showNumComics.js'></script>
+    <script src='scripts/searchComic.js'></script>
+    <script src='scripts/nav.js'></script>
+    <script src='scripts/createComics.js'></script>
+</body>
+
+</html>
