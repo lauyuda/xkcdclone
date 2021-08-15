@@ -22,3 +22,6 @@ To show n number of comics, it will generate n number of single-comic div.
 All the scripts in index.html are written in JS and can be found in the scripts folder.\
 The stylesheet CSS used for index.html is within the styles folder.\
 Images used in this project are in the image folder.
+
+## How to run it using VSCode?
+Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to run index.html.
